@@ -12,4 +12,5 @@
 macOS Catalina 10.15.5
 
 OpenCore 0.5.9 
+
 ![](ScreenShot/1.png)
