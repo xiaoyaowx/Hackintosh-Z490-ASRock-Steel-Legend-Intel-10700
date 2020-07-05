@@ -39,6 +39,8 @@ Kexts
 
 -------
 CPU，内存，显卡识别正常
+
 ![](ScreenShot/1.png)
 CINEBENCH R20跑分，CPU变频正常
+
 ![](ScreenShot/2.png)
