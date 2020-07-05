@@ -45,3 +45,6 @@ CPU，内存，显卡识别正常
 CINEBENCH R20跑分，CPU变频正常
 
 ![](ScreenShot/2.png)
+
+核显硬件加速正常
+![](ScreenShot/3.png)
