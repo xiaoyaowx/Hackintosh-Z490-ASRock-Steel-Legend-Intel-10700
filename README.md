@@ -10,7 +10,8 @@
 
 
 macOS Catalina 10.15.5
-完全按照官方指引做的引导
+
+按照官方指引做的引导
 
 OpenCore 0.5.9 
 https://dortania.github.io/OpenCore-Desktop-Guide/
