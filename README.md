@@ -33,6 +33,7 @@ ACPI
 3. SSDT-PLUG.aml
 4. SSDT-USBX.aml 
 5. SSDT-PMCR.aml （修正节能第5项，如果不加默认是4项，非强迫症可忽略）
+6. SSDT-SBUS-MCHC.aml (修复SMBus support) 
 
 Kexts
 1. AppleALC.kext
