@@ -47,6 +47,8 @@ Kexts
 10. WhateverGreen.kext
 
 * 在使用USBInjectAll.kext的时候发现系统USB设备HS13被识别为LED Controller 应该和主板的LED光效有关，重启进入Bios后会造成Bios中的主板LED光效开关失效，只能重新定制USBPort.kext，将HS13设备排除
+* 关于显卡优化，现在只找到针对5700XT的显卡的优化参数，5600XT据说也能用，我这里也没试，有兴趣的可以自己尝试，试过加载 RadeonBoost.kext发现并没有什么效果，原作者在最新版本也把5000系显卡的支持去掉了
+https://www.insanelymac.com/forum/topic/343461-kext-tired-of-low-geekbench-scores-use-radeonboost/
 
 -------
 CPU，内存，显卡识别正常
