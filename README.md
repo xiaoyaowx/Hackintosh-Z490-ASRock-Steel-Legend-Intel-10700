@@ -1,8 +1,8 @@
 # Hackintosh-Z490-ASRock-Steel-Legend-Intel-i7 10700
-硬件配置
 
-| 主板  | 华擎（ASRock）Z490 Steel Legend 钢铁传奇 |
+| 硬件配置 ||
 |---|----------------------------------|
+| 主板  | 华擎（ASRock）Z490 Steel Legend 钢铁传奇 |
 |CPU|Intel i7-10700                      |
 |内存|海盗船 DDR4 3200 16G X 2|
 |显卡|蓝宝石（Sapphire）RX 5600XT|
@@ -16,6 +16,8 @@ macOS Catalina 10.15.5
 OpenCore 0.5.9 
 
 https://dortania.github.io/OpenCore-Desktop-Guide/
+
+* 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，试过好象在安装界面也无法修改网络配置，所以这里必须用其它工具或者用 “macOS install” 的方法创建完整的安装镜像才可以正常安装
 
 -------
 2020.07.05
@@ -34,10 +36,10 @@ ACPI
 
 Kexts
 1. AppleALC.kext
-2. FakePCIID_Intel_HDMI_Audio.kext 板载ALC1200需要仿冒声卡才可以驱动
+2. FakePCIID_Intel_HDMI_Audio.kext  板载ALC1200需要仿冒声卡才可以驱动
 3. FakePCIID.kext
 4. Lilu.kext
-5. LucyRTL8125Ethernet.kext 板载2.5G网卡驱动（网卡设置“高级-硬件”中将速率改为1000baseT）
+5. LucyRTL8125Ethernet.kext   板载2.5G网卡驱动（网卡设置“高级-硬件”中将速率改为1000baseT）
 6. SMCProcessor.kext
 7. SMCSuperIO.kext
 8. USBPorts.kext
@@ -62,3 +64,8 @@ CINEBENCH R20跑分，CPU变频正常
 修眠正常
 
 ![](ScreenShot/4.png)
+
+
+Geekbench CPU和显卡测试
+
+![](ScreenShot/5.png)
