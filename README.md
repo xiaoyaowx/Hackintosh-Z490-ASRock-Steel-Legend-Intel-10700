@@ -11,9 +11,10 @@
 
 macOS Catalina 10.15.5
 
-按照官方指引做的引导
+按照官方指引 Comet Lake 做的引导
 
 OpenCore 0.5.9 
+
 https://dortania.github.io/OpenCore-Desktop-Guide/
 
 -------
