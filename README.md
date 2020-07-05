@@ -23,7 +23,7 @@ https://dortania.github.io/OpenCore-Desktop-Guide/
 2020.07.05
 
 ## 目前已知问题：
-* Bios中开启USB键盘鼠标唤醒后，休眠可以用键鼠正常唤醒，但是关机会卡住无法关机
+* BIOS中开启 “USB鼠标开机，USB键盘/远程开机，PCIE设备开机” 后，关机会卡住无法关机 
 
 -------
 ## 相关配置说明：
