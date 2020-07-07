@@ -27,7 +27,7 @@ https://dortania.github.io/OpenCore-Desktop-Guide/
 
 ![](ScreenShot/7.png)
 
-注入后的Geekbench测试得分有提升，Final Cut Pro的视频导速度也有非常明显的提高（原来15秒左右，现在9秒）
+注入后的Geekbench测试得分有提升，Final Cut Pro的视频导出度也有非常明显的提高（原来15秒左右，现在9秒）
 
 ![](ScreenShot/6.png)
 
