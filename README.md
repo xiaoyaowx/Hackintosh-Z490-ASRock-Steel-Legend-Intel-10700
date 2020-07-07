@@ -17,7 +17,25 @@ OpenCore 0.5.9
 
 https://dortania.github.io/OpenCore-Desktop-Guide/
 
-* 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，试过好象在安装界面也无法修改网络配置，所以这里必须用其它工具或者用 “macOS install” 的方法创建完整的安装镜像才可以正常安装
+* 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，安装界面无法修改，打开“终端”执行命令：
+    `ifconfig en0 media 1000baseT ` （感谢[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
+    
+-------
+2020.07.07
+
+* 注入显卡优化参数，5600/5700xt都适用，主要是注入ROM号和VBIOS版本号，之前有直接加载RadeonBoost.kext的懒人方法，实测5000系的显卡已经无效（https://www.insanelymac.com/forum/topic/343461-kext-tired-of-low-geekbench-scores-use-radeonboost/）
+
+![](ScreenShot/7.png)
+
+注入后的Geekbench测试得分有提升，Final Cut Pro的视频导速度也有非常明显的提高（原来15秒左右，现在9秒）
+
+![](ScreenShot/6.png)
+
+参考
+
+https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/
+
+http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1839725&highlight=5700xt
 
 -------
 2020.07.05
@@ -48,8 +66,7 @@ Kexts
 10. WhateverGreen.kext
 
 * 在使用USBInjectAll.kext的时候发现系统USB设备HS13被识别为LED Controller 应该和主板的LED光效有关，重启进入Bios后会造成Bios中的主板LED光效开关失效，只能重新定制USBPort.kext，将HS13设备排除
-* 关于显卡优化，现在只找到针对5700XT的显卡的优化参数，5600XT据说也能用，我这里也没试，有兴趣的可以自己尝试，试过加载 RadeonBoost.kext发现并没有什么效果，原作者在最新版本也把5000系显卡的支持去掉了
-https://www.insanelymac.com/forum/topic/343461-kext-tired-of-low-geekbench-scores-use-radeonboost/
+
 
 -------
 CPU，内存，显卡识别正常
