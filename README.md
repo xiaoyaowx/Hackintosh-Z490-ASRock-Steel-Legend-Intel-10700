@@ -7,6 +7,7 @@
 |内存|海盗船 DDR4 3200 16G X 2|
 |显卡|蓝宝石（Sapphire）RX 5600XT|
 |SSD|西数 SN750 500G X 2|
+|Wifi/蓝牙|Broadcom BCM94360CD|
 
 
 macOS Catalina 10.15.5
@@ -20,6 +21,13 @@ https://dortania.github.io/OpenCore-Desktop-Guide/
 * 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，安装界面无法修改，打开“终端”执行命令：
     `ifconfig en0 media 1000baseT ` （感谢[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
     
+-------
+2020.07.20
+* 新加了块Broadcom BCM94360CD无线网卡（4天线）,EFI未做任何修改，开机Wifi,蓝牙功能都正常
+* * 休眠唤醒以后Wifi网络变慢，可以在节能选项中取消”唤醒以供网络访问“选项
+* * 蓝牙功能需要连接主板内置9针USB口，需要重新定制USB端口
+
+
 -------
 2020.07.07
 
