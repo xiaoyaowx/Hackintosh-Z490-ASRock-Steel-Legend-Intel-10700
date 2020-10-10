@@ -10,17 +10,24 @@
 |Wifi/蓝牙|Broadcom BCM94360CD|
 
 
-macOS Catalina 10.15.6
+macOS Catalina 10.15.7
 
 按照官方指引 Comet Lake 做的引导
 
-OpenCore 0.6.0 
+OpenCore 0.6.2 
 
-https://dortania.github.io/OpenCore-Desktop-Guide/
+https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
 * 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，安装界面无法修改，打开“终端”执行命令：
     `ifconfig en0 media 1000baseT ` （感谢[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
 
+* BIOS设置参考官方文档中的配置，没有正确设置会导致卡屏进不了安装界面等问题  https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#intel-bios-settings
+
+-------
+2020.10.10
+* 更新OpenCore 0.6.2 ,更新Kexts驱动
+* 实测新版本AppleALC已经支持板载声卡，去掉了仿冒驱动，引导参数添加了 alcid=49
+（iStat Menus中CPU温度传感器无法显示，其它软件中可正常显示）
 
 -------
 2020.08.25
