@@ -18,10 +18,10 @@ OpenCore 0.6.2
 
 https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
-* The image created from the instructions in official instructions: “Creating the USB” --- "Windows install" is a recovery image only, you need Internet connection during installtion. I don't have a driver-less wireless card, and the onboard LAN is 2.5G, which must be configured to 1G manually during installation. To do it, open the terminal during installation and execute the following commands:
+* The image created from the instructions in official manual: “Creating the USB” --- "Windows install" is a recovery image only, you need Internet connection during installtion. I don't have a driver-free wireless card, and the onboard LAN is 2.5G, which must be configured to 1G manually during installation. To do it, open the terminal during installation and execute the following commands:
     `ifconfig en0 media 1000baseT ` （Thanks to[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
 
-* You need to set your BIOS correctly as stated in the official instructions, other wise, you might stuck at the installation phase. https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#intel-bios-settings
+* You need to set your BIOS correctly as stated in the official instructions, otherwise, you might stuck at the installation phase. https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#intel-bios-settings
 
 -------
 2020.10.10
@@ -78,7 +78,7 @@ Kexts
 2. FakePCIID_Intel_HDMI_Audio.kext  Need to fake audio device to enable onboard ALC1200板载ALC1200
 3. FakePCIID.kext
 4. Lilu.kext
-5. LucyRTL8125Ethernet.kext  Onboard 2.5G ethernet card driver（You need to change link speed in "Advanced-Hardware) in network ethernet configuration to 1000baseT manually）
+5. LucyRTL8125Ethernet.kext  Onboard 2.5G ethernet card driver（You need to change link speed in "Advanced-Hardware" in network ethernet configuration to 1000baseT manually）
 6. SMCProcessor.kext
 7. SMCSuperIO.kext
 8. USBPorts.kext
