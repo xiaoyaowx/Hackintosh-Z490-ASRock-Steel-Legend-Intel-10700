@@ -10,11 +10,11 @@
 |Wifi/蓝牙|Broadcom BCM94360CD|
 
 
-macOS Catalina 10.15.7
+macOS Big Sur 11.4
 
 按照官方指引 Comet Lake 做的引导
 
-OpenCore 0.6.2 
+OpenCore 0.7.0 
 
 https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
@@ -22,7 +22,9 @@ https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
     `ifconfig en0 media 1000baseT ` （感谢[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
 
 * BIOS设置参考官方文档中的配置，没有正确设置会导致卡屏进不了安装界面等问题  https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#intel-bios-settings
-
+-------
+2021.06.15
+* 更新OpenCore 0.7.0 ,更新Kexts驱动
 -------
 2020.10.10
 * 更新OpenCore 0.6.2 ,更新Kexts驱动
