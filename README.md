@@ -10,18 +10,23 @@
 |Wifi/蓝牙|Broadcom BCM94360CD|
 
 
-macOS Big Sur 11.4
+macOS Monterey 12.4
 
 按照官方指引 Comet Lake 做的引导
 
-OpenCore 0.7.0 
+OpenCore 0.8.1 
 
 https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html
 
-* 官方文档中在 “Creating the USB” --- "Windows install" 中创建的安装U盘是恢复镜像，安装过程中必须要有网络，我这里没有安装黑苹果免驱的无线网卡，板载2.5G网卡驱动需要手工配置才可使用，安装界面无法修改，打开“终端”执行命令：
-    `ifconfig en0 media 1000baseT ` （感谢[id86021](https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700/issues/2#issue-651397552)）
 
-* BIOS设置参考官方文档中的配置，没有正确设置会导致卡屏进不了安装界面等问题  https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#intel-bios-settings
+
+* BIOS设置参考官方文档中的配置，没有正确设置会导致卡屏进不了安装界面等问题  
+https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html
+
+-------
+2022.06.19
+* 更新OpenCore 0.8.1 ,更新Kexts驱动
+* 去掉了显卡优化参数,感觉没什么用
 -------
 2021.06.15
 * 更新OpenCore 0.7.0 ,更新Kexts驱动
